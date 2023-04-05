@@ -1,4 +1,4 @@
-#inlcude "main.h"
+#include "main.h"
 /**
  * _puts_recursion - function that prints the string
  * @s: pointer to the string
