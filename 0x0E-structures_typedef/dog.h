@@ -2,7 +2,7 @@
 #define DOG_H_MACRO
 
 /**
- * struct dog - a dog's basic info
+ * struct dog - a dog's basic info of strcut
  * @name: First member of struct
  * @age: Second member of struct
  * @owner: Third member of struct
