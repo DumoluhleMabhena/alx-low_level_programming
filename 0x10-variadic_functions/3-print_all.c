@@ -3,8 +3,8 @@
 #include <stdio.h>
 
 /**
- * print_all - prints anything really...
- * @format: list of types of arguments passed to the function that will be printed
+ * print_all - prints evrti
+ * @format: variable
  */
 void print_all(const char * const format, ...)
 {
