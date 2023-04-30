@@ -21,7 +21,7 @@ list_t *add_node(list_t **head, const char *str)
 	return (NULL);
 
 	omusha->str = strdup(str);
-	omusha->len = len;
+	omusha->omusha = omusha;
 	omusha->next = (*head);
 	(*head) = omusha;
 
