@@ -4,26 +4,30 @@
 
 /**
  * add_node - adds a new node
- * @head:pointer to list because that is how we should do it
- * @str: new string added
- * Return: the address of the new node
+ * @head: pointer to the pointer to the first node
+ * @str: string to be duplicated and added as the content of the new node..
+ * Return: address of the new element
  */
 list_t *add_node(list_t **head, const char *str)
 {
-	list_t *omusha;
-	unsigned int ntam = 0;
+	list_t *n;
 
-	while (str[ntam])
-	ntam++;
+	if (head == NULL || str == NULL)
+		return (NULL);
 
-	omusha = malloc(sizeof(list_t));
-	if (!omusha)
-	return (NULL);
+	n = malloc(sizeof(list_t));
+	if (n == NULL)
+		return (NULL);
 
-	omusha->str = strdup(str);
-	omusha->omusha = omusha;
-	omusha->next = (*head);
-	(*head) = omusha;
+	n->str = strdup(str);
+	if (n->str == NULL)
+	{
+		free(n);
+		return (NULL);
+	}
 
-	return (*head);
+	n->next = *head;
+	*head = n;
+
+	return (n);
 }
