@@ -3,27 +3,27 @@
 #include "lists.h"
 
 /**
- * add_node - adds a new neginning of a linked list
- * @head: double po the list_t list
- * @str: new string in the node
- * Return: the address new element, or NULL if it fails
+ * add_node - adds a node at the beginning of a linked list
+ * @head: double pointer tist_t list
+ * @str: new string to add in the
+ * Return: the addhe new element, or NULL if it fails
  */
 list_t *add_node(list_t **head, const char *str)
 {
-	list_t *okusha;
-	unsigned int ntambo = 0;
+	list_t *new;
+	unsigned int length = 0;
 
-	while (str[ntambo])
-		ntambo++;
+	while (str[length])
+		length++;
 
-	okusha = malloc(sizeof(list_t));
-	if (!okusha)
+	new = malloc(sizeof(list_t));
+	if (!new)
 		return (NULL);
 
-	okusha->str = strdup(str);
-	okusha->ntambo = ntambo;
-	okusha->next = (*head);
-	(*head) = okusha;
+	new->str = strdup(str);
+	new->length = length;
+	new->next = (*head);
+	(*head) = new;
 
 	return (*head);
 }
