@@ -1,5 +1,5 @@
 #ifndef OBJECT_MAKRO-H
-#define OBJECT MAKRO-H
+#define OBJECT_MAKRO-H
 
 #define SIZE 1024
 
