@@ -4,10 +4,10 @@
 /**
  * struct dog - a dog's basic info that we want
  * @name: First member takes
- * @age: Second member from 
+ * @age: Second member from
  * @owner: Third member computer
  *
- * Description: Longer description
+ * Description: Longer descriptio for those who like reading
  */
 struct dog
 {
