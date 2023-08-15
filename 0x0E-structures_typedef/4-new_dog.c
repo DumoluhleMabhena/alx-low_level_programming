@@ -40,7 +40,7 @@ char *_strcpy(char *dest, char *src)
 		leng++;
 	}
 
-	for (m = 0; m < len; m++)
+	for (m = 0; m < leng; m++)
 	{
 		dest[m] = src[m];
 	}
