@@ -1,13 +1,23 @@
 #include "main.h"
-#include <unistd.h>
+#include <stdlib.h>
 /**
- * _putchar - writee character c to stdout
- * @c: The character tot
+ * create_array - create array of sind assign char c
+ * @size: siof array
+ * @c: char togn
+ * Description: creay of size size and assign char c
+ * Return: pointer to arraif fail
  *
- * Return: On success 1.
- * On error, -1 is returned,is set appropriately.
  */
-int _putchar(char c)
+char *create_array(unsigned int size, char c)
 {
-	return (write(1, &c, 1));
+	char *strin;
+	unsigned int xi;
+
+	strin = malloc(sizeof(char) * size);
+	if (size == 0 || strin == NULL)
+		return (NULL);
+
+	for (xi = 0; xi < size; xi++)
+		strin[xi] = c;
+	return (strin);
 }
