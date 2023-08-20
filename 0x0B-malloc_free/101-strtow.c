@@ -55,7 +55,7 @@ char **strtow(char *str)
 		{
 			if (cb)
 			{
-				ed =ji;
+				ed = ji;
 				tp = (char *) malloc(sizeof(char) * (cb + 1));
 				if (tp == NULL)
 					return (NULL);
