@@ -16,7 +16,7 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 
 	for (ix = 0; ix < n; ix++)
 	{
-		printf("%d", va_arg(numzss, int));
+		printf("%d", va_arg(numszs, int));
 
 		if (ix != (n - 1) && separator != NULL)
 			printf("%s", separator);
