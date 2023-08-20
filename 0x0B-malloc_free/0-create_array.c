@@ -1,19 +1,13 @@
-#include <stdlib.h>
 #include "main.h"
+#include <unistd.h>
 /**
- * *malloc_checked -ocates memorying malloc
- * @b: number of bytes to ale
+ * _putchar - writee character c to stdout
+ * @c: The character tot
  *
- * Return: a pointer tallocated memory
+ * Return: On success 1.
+ * On error, -1 is returned,is set appropriately.
  */
-void *malloc_checked(unsigned int b)
+int _putchar(char c)
 {
-	void *poter;
-
-	poter = malloc(b);
-
-	if (poter == NULL)
-		exit(98);
-
-	return (poter);
+	return (write(1, &c, 1));
 }
